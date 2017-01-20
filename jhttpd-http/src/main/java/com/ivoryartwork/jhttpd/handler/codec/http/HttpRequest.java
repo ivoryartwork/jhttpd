@@ -20,7 +20,19 @@ public interface HttpRequest {
      *
      * @return
      */
-    String Uri();
+    String uri();
 
+    /**
+     * get http headers
+     *
+     * @return
+     */
+    HttpHeaders headers();
 
+    /**
+     * get http version
+     *
+     * @return
+     */
+    HttpVersion version();
 }
